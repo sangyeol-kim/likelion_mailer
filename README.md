@@ -28,4 +28,4 @@ gmail 계정으로 메일을 보낼 경우 [해당 링크](https://myaccount.goo
 
 > 보안 수준이 낮아지기 때문에 추천드리지 않습니다.
 
-## Hack your life!
+### Hack your life!
