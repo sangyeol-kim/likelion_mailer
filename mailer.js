@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 nodemailer.createTestAccount((err, account) => {
   let transporter = nodemailer.createTransport({
-    service: "", // ex) 보내는 메일 계정의 서비스 (naver, gmail ...)
+    service: "", // ex) 사용할 메일 서비스 (naver, gmail ...)
     auth: {
       user: "", // Email
       pass: "" // Password
