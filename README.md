@@ -1,4 +1,4 @@
-# KNU Likelion
+# KNU(강원대학교 춘천) Likelion
 
 ## 정보
 
