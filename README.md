@@ -1,4 +1,4 @@
-# KNU Likelion
+# KNU Likelion (강원대학교 춘천)
 
 ## 정보
 
@@ -27,5 +27,8 @@ Node v10.12.0
 gmail 계정으로 메일을 보낼 경우 [해당 링크](https://myaccount.google.com/lesssecureapps)에서 보안 수준이 낮은 앱 액세스를 ON해야 합니다.
 
 > 보안 수준이 낮아지기 때문에 추천드리지 않습니다.
+
+<br><br>
+
 
 ### Hack your life!
