@@ -2,9 +2,15 @@ const nodemailer = require("nodemailer");
 
 nodemailer.createTestAccount((err, account) => {
   let transporter = nodemailer.createTransport({
-    service: "", // ex) 사용할 메일 서비스 (naver, gmail ...)
+    /* host: "smtp.ethereal.email", // 본인이 사용하는 SMTP 메일서버가 있다면 사용할 수 있습니다.
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    */
+    
+    service: "", // service를 사용하면 SMTP 서버가 없어도 메일을 발송할 수 있습니다. 
+                 // ex) 사용할 메일 서비스 (naver, gmail ...)
     auth: {
-      user: "", // Email
+      user: "", // ID / likelion.org를 사용할 경우 service에 gmail을 체크하고 user에는 Email을 적어주세요.
       pass: "" // Password
     }
   });
@@ -14,7 +20,7 @@ nodemailer.createTestAccount((err, account) => {
     {
       name: "",
       email: ""
-      // 개인 별 면접 시간 등 다양하게 추가
+      // 개인 별 면접 시간 등 다양한 Property 추가 가능.
     },
     // {
     //   name: "",
@@ -25,7 +31,7 @@ nodemailer.createTestAccount((err, account) => {
   let sendBox = () => {
     for (const mail of mails) {
       let settings = {
-        from: "", // Sender Email
+        from: "", // Sender Email, Gmail은 위조 불가
         to: mail.email,
         subject: "", // Title
         text: `` // Content
