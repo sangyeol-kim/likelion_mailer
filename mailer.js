@@ -15,7 +15,7 @@ nodemailer.createTestAccount((err, account) => {
       name: "",
       email: ""
       // 개인 별 면접 시간 등 다양하게 추가
-    }
+    },
     // {
     //   name: "",
     //   email: "",
