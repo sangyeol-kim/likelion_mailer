@@ -7,6 +7,9 @@ nodemailer.createTestAccount((err, account) => {
     secure: false, // true for 465, false for other ports
     */
     
+    pool: true, // 모든 이메일에 대해 new connection을 생성하는 것이 아닌 pooled connection을 사용하기 위해서 ture로 설정, default는 false
+    maxConnections: 1, // SMTP 서버에 대해 수행 할 최대 동시 연결 수. 일단 1로 설정, default는 5, 하지만 3 이상으로 설정하면 누락되는 메일 발생.
+    
     service: "", // service를 사용하면 SMTP 서버가 없어도 메일을 발송할 수 있습니다. 
                  // ex) 사용할 메일 서비스 (naver, gmail ...)
     auth: {
