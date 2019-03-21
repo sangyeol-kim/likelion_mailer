@@ -48,8 +48,10 @@ nodemailer.createTestAccount((err, account) => {
         if (err) {
           return console.log(err);
         }
+        // console.time();
         console.log("Message sent: %s", res.accepted);
         // 정상적으로 발송된 client eamil 출력
+        // console.timeEnd();
       });
     }
   };
